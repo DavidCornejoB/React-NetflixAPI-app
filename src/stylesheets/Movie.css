@@ -10,16 +10,47 @@
 .titulo-movie {
     text-align: center;
     color: white;
+    padding: 20px;
 }
 
 .imagen-movie {
     padding: 20px;
     width: 40rem;
-
-
 }
 
 .synopsis-movie {
     color: white;
-    font-size: large;
+    font-size: larger;
+}
+
+ /* RESPONSIVE DESIGN */
+ @media (max-width:1200px) {
+
+    .imagen-movie {
+        width: 30rem;
+    }
+}
+
+@media (max-width:800px) {
+
+    .imagen-movie {
+        width: 20rem;
+    }
+    .synopsis-movie {
+        font-size: large;
+    }
+}
+
+@media (max-width:600px) {
+
+    .titulo-movie {
+        font-size: large;
+    }
+    .imagen-movie {
+        width: 15rem;
+    }
+    .synopsis-movie {
+        font-size: medium;
+        padding: 20px;
+    }
 }

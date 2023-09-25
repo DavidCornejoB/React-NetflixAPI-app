@@ -13,6 +13,25 @@
   padding: 20px;
 }
 
+.busqueda-movie {
+  border-radius: 5px;
+  background-color:  rgb(54, 53, 53);
+  border-style: solid;
+  color: white;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+  width: 82%;
+
+  transition-property: border-color;
+  transition-duration: .5s, .5s;
+  transition-timing-function: none, ease;
+}
+
+.busqueda-movie:hover {
+  border-color: aquamarine;
+}
+
 .lista-peliculas {
   display: flex;
   flex-direction: column;

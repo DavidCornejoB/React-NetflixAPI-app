@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1 className='titulo-app'>PELÍCULAS Y SERIES DE NETFLIX</h1>
-      <input type="text" value={busqueda} onChange={busquedaOnChange} placeholder="Breaking Bad"/>
+      <input className='busqueda-movie' type="text" value={busqueda} onChange={busquedaOnChange} placeholder="Breaking Bad"/>
 
       <div className='lista-peliculas'>
         {peliculas.titles?.map((peli) => <Movie key={peli.summary.id} title={peli.jawSummary.title} synopsis={peli.jawSummary.synopsis} img={peli.jawSummary.logoImage.url}/>)}
