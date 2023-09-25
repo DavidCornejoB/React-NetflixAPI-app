@@ -1,0 +1,25 @@
+.tarjeta-movie {
+    background-color: rgb(54, 53, 53);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.titulo-movie {
+    text-align: center;
+    color: white;
+}
+
+.imagen-movie {
+    padding: 20px;
+    width: 40rem;
+
+
+}
+
+.synopsis-movie {
+    color: white;
+    font-size: large;
+}

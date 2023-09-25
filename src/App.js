@@ -17,7 +17,7 @@ function App() {
     const OPTIONS = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '7f9957d316mshe8a676c0e954363p1bb84fjsn6c7ee451e234',
+        'X-RapidAPI-Key': 'b34f09974emshd0ac76bd2f80487p1d8c7bjsnb20d8353cf36',
         'X-RapidAPI-Host': 'netflix-data.p.rapidapi.com'
       }
     };
@@ -29,12 +29,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>PELÍCULAS Y SERIES DE NETFLIX</h1>
+      <h1 className='titulo-app'>PELÍCULAS Y SERIES DE NETFLIX</h1>
       <input type="text" value={busqueda} onChange={busquedaOnChange} placeholder="Breaking Bad"/>
 
-      <ul>
-        {peliculas.titles?.map((peli) => <Movie key={peli.summary.id} title={peli.jawSummary.title} synopsis={peli.jawSummary.synopsis}/>)}
-      </ul>
+      <div className='lista-peliculas'>
+        {peliculas.titles?.map((peli) => <Movie key={peli.summary.id} title={peli.jawSummary.title} synopsis={peli.jawSummary.synopsis} img={peli.jawSummary.logoImage.url}/>)}
+      </div>
 
     </div>
     );
